@@ -1,3 +1,9 @@
+<!--
+This is the landing page the user will see, while landing on this website.
+This file containes the logo and some texts
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
