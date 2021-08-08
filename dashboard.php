@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
 <?php
     require "./nav.php";
     ?>
 
-    <div class="container">
-      <div class="" style="border: 3px solid green;">
+    <div class="container"style="margin-top:4rem;">
+      <div class="m-2 mt-4 mb-4" style="border: 3px solid green; padding:20px;">
         <h1>Batch 2017</h1>
         <hr>
+        <a href="./addstudent.php" class="btn btn-outline-primary text-center">Add Students</a>
+        <a href="./addstudent.php" class="btn btn-outline-danger text-center">Remove Students</a>
+        <a href="./addstudent.php" class="btn btn-outline-warning text-center">Update Students</a>
     <table class="table table-hover">
   <thead>
     <tr>
@@ -28,26 +31,133 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+      <?php
+      require "./students.php";
+      if($numr> 0){
+        while ($row = mysqli_fetch_assoc($result)) {
+            // printf("%s (%s)\n", $row["name"], $row["password"]);
+            // echo var_dump($row);
+            // echo "<br>";
+            echo " <th >".$row['id']."</th>
+            <td>".$row['name']."</td>
+            <td>".$row['reg']."</td>
+            <td>".$row['address']."</td>
+          </tr>";
+        }
+    }
+      ?>
+      </tbody>
+      </table>
     </div>
-    
+
+    <div class="m-2 mt-4 mb-4" style="border: 3px solid green; padding:20px;">
+        <h1>Batch 2018</h1>
+        <hr>
+        <a href="./addstudent.php" class="btn btn-outline-primary text-center">Add Students</a>
+        <a href="./addstudent.php" class="btn btn-outline-danger text-center">Remove Students</a>
+        <a href="./addstudent.php" class="btn btn-outline-warning text-center">Update Students</a>
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">sl no:</th>
+      <th scope="col">Name</th>
+      <th scope="col">Reg No.</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <?php
+      require "./students.php";
+      if($numr> 0){
+        while ($row = mysqli_fetch_assoc($result)) {
+            // printf("%s (%s)\n", $row["name"], $row["password"]);
+            // echo var_dump($row);
+            // echo "<br>";
+            echo " <th >".$row['id']."</th>
+            <td>".$row['name']."</td>
+            <td>".$row['reg']."</td>
+            <td>".$row['address']."</td>
+          </tr>";
+        }
+    }
+      ?>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="m-2 mt-4 mb-4" style="border: 3px solid green; padding:20px;">
+        <h1>Batch 2019</h1>
+        <hr>
+        <a href="./addstudent.php" class="btn btn-outline-primary text-center">Add Students</a>
+        <a href="./addstudent.php" class="btn btn-outline-danger text-center">Remove Students</a>
+        <a href="./addstudent.php" class="btn btn-outline-warning text-center">Update Students</a>
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">sl no:</th>
+      <th scope="col">Name</th>
+      <th scope="col">Reg No.</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <?php
+      require "./students.php";
+      if($numr> 0){
+        while ($row = mysqli_fetch_assoc($result)) {
+            // printf("%s (%s)\n", $row["name"], $row["password"]);
+            // echo var_dump($row);
+            // echo "<br>";
+            echo " <th >".$row['id']."</th>
+            <td>".$row['name']."</td>
+            <td>".$row['reg']."</td>
+            <td>".$row['address']."</td>
+          </tr>";
+        }
+    }
+      ?>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="m-2 mt-4 mb-4" style="border: 3px solid green; padding:20px;"id="2020">
+        <h1>Batch 2020</h1>
+        <hr>
+        <a href="./addstudent.php" class="btn btn-outline-primary text-center">Add Students</a>
+        <a href="./addstudent.php" class="btn btn-outline-danger text-center">Remove Students</a>
+        <a href="./addstudent.php" class="btn btn-outline-warning text-center">Update Students</a>
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">sl no:</th>
+      <th scope="col">Name</th>
+      <th scope="col">Reg No.</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <?php
+      require "./students.php";
+      if($numr> 0){
+        while ($row = mysqli_fetch_assoc($result)) {
+            // printf("%s (%s)\n", $row["name"], $row["password"]);
+            // echo var_dump($row);
+            // echo "<br>";
+            echo " <th >".$row['id']."</th>
+            <td>".$row['name']."</td>
+            <td>".$row['reg']."</td>
+            <td>".$row['address']."</td>
+          </tr>";
+        }
+    }
+      ?>
+      </tbody>
+      </table>
+    </div>
+
+</div>
 </body>
 </html>

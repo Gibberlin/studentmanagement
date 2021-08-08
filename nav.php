@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container-fluid">
 
     <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" width="30" height="34"></a>
@@ -18,7 +18,7 @@
             Batches
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Batch 2020</a></li>
+            <li><a class="dropdown-item" href="#2020">Batch 2020</a></li>
             <li><a class="dropdown-item" href="#">Batch 2019</a></li>
             <li><a class="dropdown-item" href="#">Batch 2018</a></li>
             <li><a class="dropdown-item" href="#">Batch 2017</a></li>
@@ -28,10 +28,7 @@
         </li>
         
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <a href="./logout.php" class="btn btn-danger">Logout </a>
     </div>
   </div>
 </nav>
