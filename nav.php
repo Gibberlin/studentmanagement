@@ -1,3 +1,6 @@
+<?php  
+session_start();  
+?> 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container-fluid">
 
@@ -28,7 +31,7 @@
         </li>
         
       </ul>
-      <a href="./logout.php" class="btn btn-danger">Logout </a>
+      <a href="./logout.php" class="btn btn-danger">Logout <?php echo $_SESSION['login_user'];  ?></a>
     </div>
   </div>
 </nav>
