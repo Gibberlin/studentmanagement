@@ -41,6 +41,8 @@ if($_SESSION['session']==false){
     <tr>
       <?php
       require "./students.php";
+      $url="./profile.php?id=";
+      $style="btn btn-success";
       if($numr> 0){
         while ($row = mysqli_fetch_assoc($result)) {
             // printf("%s (%s)\n", $row["name"], $row["password"]);
@@ -49,8 +51,10 @@ if($_SESSION['session']==false){
             echo " <th >".$row['id']."</th>
             <td>".$row['name']."</td>
             <td>".$row['reg']."</td>
-            <td>".$row['address']."</td>
-          </tr>";
+            <td>".$row['address']."</td>"
+            // <td><a href=".$url.$row['id']. ">"."View</a>
+            .'<td><a href="'.$url.$row['id'].'" class="btn btn-success">View</a></td>"'.
+          "</tr>";
         }
     }
       ?>
