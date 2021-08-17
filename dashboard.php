@@ -35,6 +35,7 @@ if($_SESSION['session']==false){
       <th scope="col">Name</th>
       <th scope="col">Reg No.</th>
       <th scope="col">Address</th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
